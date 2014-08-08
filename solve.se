@@ -1,0 +1,240 @@
+shared:
+    RES_START = 10000
+    depth = 8
+    lastpos = 167
+    size = 256
+    offset = 2
+    
+init:
+        
+
+    contract.storage[0]   = 0x89504e470d0a1a0a0000000d4948445200000064000000610806000000202f04
+    contract.storage[1]   = 0xe7000014a849444154789cdd5d4daf6dc751ad7abecf8eed980432e243892384
+    contract.storage[2]   = 0x014bc81006202410480c09fc00248608f17b98f11f1830400231408a90020346
+    contract.storage[3]   = 0x99640242285260902012477ad8ef1583dd55b56a55f53ee7de73625bb4f57cf6
+    contract.storage[4]   = 0xae5dbdbaaabaabaa77779f73f5577fed77ede18d77e5ff5bf9dc8b6fc9979fbf
+    contract.storage[5]   = 0xf8b4c5785479f695f7443ff7ceefd94fffe2df9db09988e8707d563a9f5326b4
+    contract.storage[6]   = 0x6b510b9e89a86ef04ce48bdffe29f9ab777ff048d44fb7fcd9ebbf220f224b39
+    contract.storage[7]   = 0x590aa1651a41934c60d5301a86a1aadbfe455e37b458d66d7873c355b089ff42
+    contract.storage[8]   = 0x0995ed6903e52a3c373696d5d0c37163d5007eb91bd270797c1e57b58df51434
+    contract.storage[9]   = 0x724c0316bc4e397bdd46b319033fadd69ca46b3491def1d7d6bd168f3171b03d
+    contract.storage[10]  = 0x1c8435f2b532d50bba6e24edb6d25ee15200bc1a4fbb48561fc9c09e034f87ba
+    contract.storage[11]  = 0x1406dd48831a37e14d987efb4c44c4cc0e6eb305e51e63c733a72dc4898675a5
+    contract.storage[12]  = 0xf109f1c9c027039e94eb8e67a5ae345a2f3a18230c429dac2ae320fc71e23df8
+    contract.storage[13]  = 0x458613773e1b438c141a38eac4b76e8c68e681556b5d453cb98007ed075e0c55
+    contract.storage[14]  = 0x0b000cad15658eef67a10823f83df026daca212b3c982d657481d7a062c5141c
+    contract.storage[15]  = 0xe630c4545f2f42a80262bfc2b0c421abe31985b1e349b4308560a9062e8053d8
+    contract.storage[16]  = 0x19eadf8ad7f402da033e0155c2652c6ed0dfb48c0617c0302bb4a1a0c0b75734
+    contract.storage[17]  = 0x70278909cfc36a5131a66833fe967692272ea4d147e39dd5abb32ca961021396
+    contract.storage[18]  = 0x5b12133f447e68c1b273aa6d5ae8423cf4be0c9548eb78a99941458b360cc4ba
+    contract.storage[19]  = 0x3a74d083a7849d4b78588c680fc8c6eee58031fe729077da091fc7e0102e3aa3
+    contract.storage[20]  = 0x3e6f6d0ccf8ac2a06d797e6dc812e2d38136f13d11ef0cfb99c831c0342730c9
+    contract.storage[21]  = 0x4874a5cf6b698e156d2d9a116dc4b3733c31cb60dadcbc939ac75ef1dcee8ce7
+    contract.storage[22]  = 0xd736f03de0ad49f5fe32522d9f37be0d8d9589fc7142d30ddf0eefa00d16635e
+    contract.storage[23]  = 0x6a76a25ddb29f7c06b658dc8986501ad5cdf42e3ebe9fe31b4a7e0857c9857d6
+    contract.storage[24]  = 0x488b70b272194e2a7dad4c987627bce860ac2b2b64c15013bf377728181a56f8
+    contract.storage[25]  = 0xf879d26cc04b10a0c54ba000df507778a974f9fa4b25d0f4304c090f3829f167
+    contract.storage[26]  = 0x30fb433ef40ebb239ec8d1399c4345041717ad841ad7e8a0d9bad3650c0d9a4b
+    contract.storage[27]  = 0x0c83a1ceb3814f575d1c1e6a26a63af0515deb7839fa36816009552613282859
+    contract.storage[28]  = 0xa3cc989dcf2bc388be194fd263d8c31f40af3223d0e5736a5c6b75064d1f465a
+    contract.storage[29]  = 0x993b1f121e39a2faf8e1da5a940b9442433c0da583462f30456cebca371a8695
+    contract.storage[30]  = 0xb37a37e279a74e09e5f090f2f67ca872f4437e96760a0d5b203e713bc77b7d60
+    contract.storage[31]  = 0x1754b7337586d374c073be7c2f54e8936c0d8d84a3b5d1108ff88addee81474c
+    contract.storage[32]  = 0xe1fd126feaf90a866e56423c4966629291c647a495848555a22ab4ce2f4dc2bc
+    contract.storage[33]  = 0x74dfd8272b0c657a9cf2e4cd29df3df19a2db3e4f23b3051849218d9226d4960
+    contract.storage[34]  = 0x5c220043e16cc43bf08c16d1086333d0caec86dae35432c936966bf9ae2dd7e0
+    contract.storage[35]  = 0xe97cbd42d61ae13863104a4ae0979cc7988651a4357a256d7af31f15bd409b76
+    contract.storage[36]  = 0x433f6d1a96981eaf5236a8269d9e6083d3e797fae36abc33cf1c80bad7531b17
+    contract.storage[37]  = 0x3cfdae785c15e8cf3a4b978169254f0df1f2647fe813296367dafcbcd51d641f
+    contract.storage[38]  = 0xd7c46ec03b2beb3d64ae758f4e3919640d9f93f6a5bad386964abcc58818a524
+    contract.storage[39]  = 0x43beaed78e6f93ce9e8c77a6744fea6c85a925199ef154889e6d5d9ca780433b
+    contract.storage[40]  = 0x2d7f18f26be513a0417ceea76964d417db72f90aed0e786731fad85387641d6d
+    contract.storage[41]  = 0x689dc28a2c4f523bf84b9ddcee4d3cf0255db458d6b555c7f1926e50c797a127
+    contract.storage[42]  = 0xbc6879bbe70fb29001c2981cdb54ca72beeb546877c06ba5e510a3ce8896853a
+    contract.storage[43]  = 0xc55b011ab4c234c3d69c166f720ada8146c157db6b78a184d23f29c3f72cbe63
+    contract.storage[44]  = 0x294bfb54b76c2ddc01efac1c218b7b5c6acf6a914c6b92eb3688bdf83eeba87b
+    contract.storage[45]  = 0xe05a6c4bd8b1546af1f65d95d3a15dc47b6439abf414c02709e1214b56001942
+    contract.storage[46]  = 0x173e47d37172af1ea68d7659ca5a27cdafedd98c9d01afc86d748f321bd0acf3
+    contract.storage[47]  = 0xe02233d36ec1dbc92f421b545da5e3512e130fcf2f14cc775e78de8034ae7776
+    contract.storage[48]  = 0xddeed79486e71731db723d4809e47302d38accb7e2814178dfa49e5ce4865112
+    contract.storage[49]  = 0xd98cefdd0c432fc7cf33da18cb2fd18690f559a4b5e79cd4c3f853ac82cfe950
+    contract.storage[50]  = 0xa14ef5160d0e1ad6ba27785897eb3c168f436b0b3127cfcffedd0b4f86cf5ced
+    contract.storage[51]  = 0x5d0bf7699b1ce206936f98984a26dd632a56ec1a78cb7d62b2042f6e7ead03de
+    contract.storage[52]  = 0x72b3a34eba619eac948a51ca900c4fe264599d26be89762bde597c2e7beaf554
+    contract.storage[53]  = 0x21b641c162f0c3e92034cc8528b255bc9a17b4d4ac8080a795bb7cd02789f4a9
+    contract.storage[54]  = 0xd3b07807f9e3238760b6895ec6738c2bb3971d7d1c0e4cf3c6bc1e9ab4271dc5
+    contract.storage[55]  = 0xb6a7f0174e967852ae8ffb23d16ac598f006ec900613ae901d77f23d166f9373
+    contract.storage[56]  = 0x457c2d4b60444ed97cc594f8228e28accf549a95da3a2830a6636a9b0aca149d
+    contract.storage[57]  = 0xcdd8be3d0cd52e198ff907196c7b73031e270e2879fa9d063902346f831d2525
+    contract.storage[58]  = 0xc6ed205a7502cf8edc1486ddb8f4aec4e616e2adfc1383628339ebf478197e1c
+    contract.storage[59]  = 0x78c7c945ff87b10f9310362214df333f67dda14eeb40059c6b424193c18a9c88
+    contract.storage[60]  = 0x77c90ee3f32776c6bdf156c802e5207af05afe691b18ab16ceb835cb75886f3a
+    contract.storage[61]  = 0xa036f209e41498f9a95c0e553738c3ddf1b86edf31acb9fd2868a06986397446
+    contract.storage[62]  = 0x24724eb0033ff2e963f8e2be7a06f623dfebc9f36d31a96b7bb7e24161de583a
+    contract.storage[63]  = 0x39f67b554a66f6465b12f2e12ad578c81723da67678c41d72292271e06be092f
+    contract.storage[64]  = 0x3a83f1b383f0c86618ce7a882edecc34aa7b331e973ecbf27d36eb46928964f5
+    contract.storage[65]  = 0xc114229c850eb1d6814f2f7560e8c2877d80a71e15ef9d5783067dc313b24f95
+    contract.storage[66]  = 0xd60ad061f97d38eac001eee6e0db6766d337750739b733a652df88368d66ffdf
+    contract.storage[67]  = 0x448376daf2103afa8d783eb12cf8abd4e577c9046f5131abface5d3a46722746
+    contract.storage[68]  = 0xa7e15d296a5b3c013c2908c8513da4724a09f0a5f51d4d81a627b41bf1a04a2b
+    contract.storage[69]  = 0x70eae418022a398f773adfe795426b2445c353e96238cd120fdad4f5df245f20
+    contract.storage[70]  = 0x8d1b5e40738b184d044cca1785902e4c430def8467880199a21cb66eef0a9beb
+    contract.storage[71]  = 0xd2e8b03b18a360c09bcafcbd5c34fb6ae3827c58beabcfe5cf7ff4c685961f57
+    contract.storage[72]  = 0xbeffdfcfe5e5ab77ee8a89e5f9bbcff3eb0858e6c94e1a1e93ad1f2b8c15ce98
+    contract.storage[73]  = 0x0d413567b3c9cc524eefe589450cb41ca0575d9093695f7eff2df99b7f7c4f62
+    contract.storage[74]  = 0xca4242e1572bc48db02a7bc79bf99bbfc9cb8f457ef9830779f5f97f087db95d
+    contract.storage[75]  = 0xf48633f9500f574f44e48bf687bc6358edc031b25aa37b23d3da0b1a27b89e8f
+    contract.storage[76]  = 0x4be1fea889312dd0e524808d11a67d18969b798e01632dc9371d4ee48bc0bb66
+    contract.storage[77]  = 0x84ba68222747494725b02de2bb48c3477a05cd061adeafe156eaae3a5af8752f
+    contract.storage[78]  = 0xcba5583a14f7deb1ddc7c8a7052958f2b03525af082750e970610a3be9e9e9ea
+    contract.storage[79]  = 0x19088a374d039893201eac1ebc3af114e5eb3207415c406a9c42cc5626665b31
+    contract.storage[80]  = 0xa8396b3eba285f69416b0be5971c0e5076353f2365d16817d2f9aa8631bbc217
+    contract.storage[81]  = 0xb533651b6f7553c6131828591ff939064db1a804d95a6f90d0448e6f9581798d
+    contract.storage[82]  = 0x73d205f986e94ab4f9e07c1ea3ddcd73b459ebd589265b1a0907c2579a088b3a
+    contract.storage[83]  = 0xd37ae0f62ddf349d87a974cd69a1d320814fb4f47e406e87f0aa4f5d23df10dd
+    contract.storage[84]  = 0xc55f219687c4573e6184297d1a352d4043d12a2dbbd5a8ae128d3bacb632e279
+    contract.storage[85]  = 0xe28c13908705f10ba91c5ed9103e6299b62bb9938a0354488f73f97297b56a29
+    contract.storage[86]  = 0x727a2eabbe63b3ac9566c3f35e7b45b6f3b7eb6dddc7d144a09de9bb73a603ff
+    contract.storage[87]  = 0x8421bdac9c5bb470db5f239fe78d45c65de98767afbe252fbff7fb43ab9fadf2
+    contract.storage[88]  = 0xf1ffbc90375f7d7c35ffebeffd28578655eab789b7b4dd8c4564f023ca708b16
+    contract.storage[89]  = 0x1d7396d4f326dedfd6e7c36ffec60bf9fbbf7d512b40ccc5179b687178dbf1f9
+    contract.storage[90]  = 0x749238b9a1bbeef8a88d55f7e397267ff40bff227ff1131f6d66819df6a7f636
+    contract.storage[91]  = 0xe1fa88d42b695269205ad0781133988836f61cb5b0ea3c301fce12f633aa56a9
+    contract.storage[92]  = 0x9326572fb4156b07da3686e300b64a2bbd81baecf0ae94af45ba85caa1376419
+    contract.storage[93]  = 0x3a8753468aaec2dbb2e5f47bdf4ad53aeb104ecca40c4fc8c17ae3fb4aa1210e
+    contract.storage[94]  = 0xd1523731d974366aeafc3c2fd9ba57ca57f5906e640873c32affdc8fba771a7e
+    contract.storage[95]  = 0x315ccbef9a8d6e8776b6322d2d18f05527aa33927dc9995a175bea33ad9f2a12
+    contract.storage[96]  = 0x3b7b2d143459269a36fead9465441bd558f7b0ec8be80ab45e0e9c384a9ad335
+    contract.storage[97]  = 0x25c3e3976c20fe47ec3da73d2d5c6c689bfbad114d627e8f8c4ed34293c667d2
+    contract.storage[98]  = 0x220a7812c60b5b79d4911274bfa3997555d3211e9ce97836cd3a7af23a5cf35a
+    contract.storage[99]  = 0xdababe8196ca482bd36853bc58f297b5b17146755c239f228dc155047f91724f
+    contract.storage[100] = 0xcbb7b4086da048bc4e2f7972f9dd5bc705994b65dc97bce4f458ae0965d41c0e
+    contract.storage[101] = 0x4a6f6da23d52926b8b4f95151a7673cd3417da5778194f0a2d5f0cd1986cd831
+    contract.storage[102] = 0x696c9e5fc35768f04c4ff8449a32c6fdd9c604c7208ef7d7c85765c8e05d1b0f
+    contract.storage[103] = 0x5a8c08772f08995e873a0107510959759605dba58433aff760dd29daf52591d4
+    contract.storage[104] = 0x9966721c4e4a4a1e756af21ffc1aed0eef853431a4df00065a59cba24f94461d
+    contract.storage[105] = 0x1c53f9e4a6182689f48ce8432d6ab75f06e5342f5f187cacf2f8f539cb7f4af7
+    contract.storage[106] = 0x9ca4132d0d732a5fc834258c2e84c1e67a648d7280cd92e65fef46ba5525bcdd
+    contract.storage[107] = 0xbe6338759fa0f1b470e158d586337905e42a44aa2f0289c0eb5e7512337fc1a6
+    contract.storage[108] = 0xb456cee7d7a5f013af6df215e90ff98d1e6438f39a75eb82f9a448001d327ec5
+    contract.storage[109] = 0x980c8f7bc675095acb67a9239d2f094a33aa8a93ed1e0dffeb479f973ffecef5
+    contract.storage[110] = 0x8716feedb5e7f25bbffdfdabf977e5f9cbff922f3cfb48cc447ef8bd5f92b7de
+    contract.storage[111] = 0x81591195299ca16e1ecdda73c7333a6c7d4ca715295011e2b12fce092cdb479c
+    contract.storage[112] = 0xdfd376cbeac9cda332a5f8c1eb5f93173ff3d7dd629bf2a6887cf70e7ff1e8ed
+    contract.storage[113] = 0x6fff9cfce5577e282f45e4ebfffb425ec59a5dea37e633e068ef929c0d81163b
+    contract.storage[114] = 0x869e47333d4133c647d8d0f034d51c167330b22eb82a9fe4e8297891759780fa
+    contract.storage[115] = 0x1ca4ab2f548e56694b9b889075a2122bad17f09e2b1e60d31271f12b15888746
+    contract.storage[116] = 0x2d4117df41564794e57711a15005338610743d312be38217c7dc3d71e5974bd8
+    contract.storage[117] = 0x5820af0573cd001c16daef3c62bb326d777176a48106757778df79f94cfee43f
+    contract.storage[118] = 0x8feef850ff5d3efa8fdfd968767bf9c99f7dc95f69cb2052cf30b261c0258d0c
+    contract.storage[119] = 0xac653c5092e32779ebdfa62a4fa61546a9460eacb21397bb96d866f7ddcb785f
+    contract.storage[120] = 0x7dff6df9c6377f1e7ef8f395e0e08c01081392234c59cae4a36ed20726337ff0
+    contract.storage[121] = 0xf557f5c7f8cf8c76e0e278ea5f4776a1d8843cf3d9ce5cb8f07b41f91223763c
+    contract.storage[122] = 0xc6050b780f9fd50bbd4592698b57e573fbc54f5a550123699ffae1baa87a630e
+    contract.storage[123] = 0x817a358780380a8011366bc8726a7909ab32451b1769c29d28218708e51ca4ad
+    contract.storage[124] = 0x8abefadb685817e53cc31be4b3b2e875462be2ef69eb36729501a78f2bfcb425
+    contract.storage[125] = 0xa1271fa77182763e2c0a757c004fb4229900df589674837232d046be6bf148be
+    contract.storage[126] = 0x333d64a0753ef046aa3bbc186e65a51b7271476f6e6c302256a818d694c6c301
+    contract.storage[127] = 0x3c636b2f63f51e9b668d761a5e8f37c8bc591bbba8ef4abe7e6e184bfbb3796d
+    contract.storage[128] = 0x1e43210453bfe0f5106ac65f7718f02aade38da3b7c305de9cac67fa94ef4aab
+    contract.storage[129] = 0x467a44d2078a0d328ffaf6bf8f15d8eb237e0473171a70d0ebf0205d9130e8e8
+    contract.storage[130] = 0x8d71fdb332e1898815cc95bf8866032dbd5088862374c60b5dab20451f1d6853
+    contract.storage[131] = 0xc184c0b27979e6740374fccb6bf1e1898d1231d35aa25695d8a451f8137a8d4f
+    contract.storage[132] = 0xb2830b1e7ad931c2706d8abbda271aed67418a808b76055e98b0c88c76d1d0d3
+    contract.storage[133] = 0x7544daaeae310d3d040d9f612955dc15e70bc3b312a4509aa88dfd3447717165
+    contract.storage[134] = 0x3669a357f27d29da34373062209f16be8b7802cb3b5a69c7657d632b9d51f87c
+    contract.storage[135] = 0xc0c1241ff844ca9e3ae98df7c5ba2b8b4c3461da909819307e57b09fcded1b54
+    contract.storage[136] = 0xda6675c7a79ed21cd2ea4f085d5f774d8fd2e82bd4812cde8d7df9bef2e58b37
+    contract.storage[137] = 0xd73d28f0f34c56b32c1a08bc9f0e7e87f71ff378c261bc2b69150f4cc5d3e9aa
+    contract.storage[138] = 0xeb96d64718339cd48d8793cc3098063d261b9cda4560da5b57642d970ae065e7
+    contract.storage[139] = 0x58de00415c8b4252a9ebeacb021025c2cc9a614089efc0a3fc504e6c58314804
+    contract.storage[140] = 0x1a15ea384d23082c20861017f08a6e3cc3a119d7968fae077d6b0e29b119f97c
+    contract.storage[141] = 0xe670fc3fc72b9edec34e9fe6195aea28d0f484afb6b8dac5d7ee8300225b0a54
+    contract.storage[142] = 0x6b6d30f0d1099eb88e18129826983c8676d9264e4603420e51b4ee22c482192c
+    contract.storage[143] = 0x88d54d3d37aa2da7d02a0b85b6e92b6a31c006bef92b6d5db18932a93fbec34c
+    contract.storage[144] = 0x3426f8e0243b2b311bd3061be075e35f51054e2e5a729268263ccef289b52b4c
+    contract.storage[145] = 0x8ed2690e6617f8c6d61e4fbb771b231e4489b12ee92b06ebd0f8be2125642564
+    contract.storage[146] = 0xee034377924487b75431362b27d920f739e135655af4c9617738a99ed040cdc9
+    contract.storage[147] = 0x5a91eacef14ef5d8d8c5f974a3af89b588e23c75830a968fbde7ca92401c124b
+    contract.storage[148] = 0x5ad903c7b0d3ea1ef14e87ac5e4f1576bc5011f61c625c457205594a2f380d3b
+    contract.storage[149] = 0x2984bf8cc721cbf98650349d8e1cf938f7000bfd4197dee5dbef4f7142ace20e
+    contract.storage[150] = 0x75a5d1785bb8b6db8b9b0919ccf4e844c303e3100e904f98ef4abc22c41cbc9f
+    contract.storage[151] = 0x5c280696b52c5b0d46fff97599994c9db23adfd29811250b6df0751b68adada3
+    contract.storage[152] = 0xc42ccec2b9aa677ab5f1ef2fc6f044c05465876755b733f93a6d13db5ab58ca9
+    contract.storage[153] = 0x7172d1d3069fe4eb5bb4f9ac8152c83a06209fe81b0125677270aa234746b6e1
+    contract.storage[154] = 0xbb806170b79842e8d05a473cfc4c61e4025ea8479e240aa1beeb3b9dfc2491c8
+    contract.storage[155] = 0x7c90d471ee8ff5f82e548b4e711d6bd6c4a85cdb9e5b98cb8607a7e0520d135d
+    contract.storage[156] = 0xce713a04d1ca2712036b87d7a5c245486c77d257367c1c5ac84344e057d80a6f
+    contract.storage[157] = 0x9d268422ec89585799c6674138cb55fe7a5df910ab452328c3ae72e1d181ef0c
+    contract.storage[158] = 0xafc9d76a81d1c7ad8cee4a3918aa8df3e799caa6f98c9733917d9385dfe89aea
+    contract.storage[159] = 0xe6ac086843a88f676dba634433643c28362cf704df1578c6320f7ae8a0c7091f
+    contract.storage[160] = 0xaff6e227fcf96efa679d66c535c84d6ce09b666d6d790230b0ce983017ddac7a
+    contract.storage[161] = 0xf4a265554b9ab83a067551c5cb78172721b7d048dffe7b594766aa04b28d89c8
+    contract.storage[162] = 0xfc65fccd2dd3473ce96e31f05dfeba352c0b66a228b324f79872766a8b77bd7c
+    contract.storage[163] = 0x5bfa9c8cb2002e7c3fc4bf898ab31d9c25d0f724e04f4884bce1eeb678aa9e59
+    contract.storage[164] = 0x79d52d91836295cf78647079d11e12300c943a83d6ede1099e5d2fdf98e046be
+    contract.storage[165] = 0xbd2cfaa52f3dd8071fbcd5193e43c54ce49bfff4a6d86bef7fe26dbff1da3fcb
+    contract.storage[166] = 0xaf7fedb54fa4ad0f3ffcaafc1fd5cd2fc6403c96f80000000049454e44ae4260
+    contract.storage[167] = 0x8200000000000000000000000000000000000000000000000000000000000000
+
+    i = 168
+    while i < size:
+        contraact.storage[i] = 0x0000000000000000000000000000000000000000000000000000000000000000
+        i += 1
+
+    i = 1
+    
+    count = size / 2
+    while i < depth + 1: 
+        j = 0
+        while j < count:
+            
+            left  = contract.storage[(i-1)*size + 2*j]
+            right = contract.storage[(i-1)*size + 2*j+1]
+            contract.storage[i*size + j] = sha3(offset*left + right)
+            j += 1
+        i +=1
+        count = count / 2
+    
+code:
+
+
+    root = contract.storage[size*depth]
+    path = sha3(msg.data[0] + msg.data[1])
+    branch = path
+    position = path % size
+    contract.storage[8886] = root
+    contract.storage[8887] = msg.data
+    contract.storage[8888] = position
+    contract.storage[8889] = path
+    contract.storage[8890] = size
+
+    i = 1    
+    contract.storage[RES_START] = contract.storage[position]
+    merkle_branch = path
+    while i < depth + 1:
+        curpos = (i-1)*size + position
+        if merkle_branch % 2 == 0:
+            contract.storage[RES_START + i] = contract.storage[curpos + 1]
+        else:
+            contract.storage[RES_START + i] = contract.storage[curpos - 1]
+        merkle_branch = merkle_branch / 2
+        position = position / 2
+        i += 1
+        
+    h = contract.storage[RES_START]
+    i = 1
+    merkle_branch = path
+    while i < depth + 1:
+        if merkle_branch % 2 == 0:
+            h = sha3(offset*h + contract.storage[RES_START+ i])
+        else:
+            h = sha3(offset*contract.storage[RES_START+ i] + h)
+        merkle_branch = merkle_branch / 2
+        i += 1
+
+    contract.storage[9999] = h    
+    if h == root:
+        return(1)
+    else:
+        return(0)

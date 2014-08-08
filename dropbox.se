@@ -1,0 +1,58 @@
+shared:
+    CHALLENGE_BLOCK = 1
+    REWARD = 2
+    PERIOD = 3
+    OWNER = 4    
+    ROOT = 5
+    DEPTH = 6
+
+    offset = 2
+    UPDATEREWARD = "updateReward"
+    UPDATEPREIOD = "updatePeriod"
+
+init:
+
+    contract.storage[REWARD] = 10^17
+    contract.storage[PERIOD] = 1
+    contract.storage[CHALLENGE_BLOCK] = block.number
+    contract.storage[OWNER] = msg.sender
+    contract.storage[ROOT] = 2531913631565592372522370595224328198030031091973168690654231967725749929645
+    contract.storage[DEPTH] = 8
+ 
+code
+    sender = msg.sender
+    reward = contract.storage[REWARD]
+    period = contract.storage[PERIOD]
+    root = contract.storage[ROOT]
+    depth = contract.storage[DEPTH]
+    owner = contract.storage[OWNER]
+
+    if sender == owner and msg.data[0] == UPDATEREWARD:
+        contract.storage[REWARD] = msg.data[1]
+        return (1)
+
+
+    if sender == owner and msg.data[0] == UPDATEPERIOD:
+        contract.storage[PERIOD] = msg.data[1]
+        return (1)
+
+
+    if contract.storage[CHALLENGE_BLOCK] < block.number:
+        merkle_branch = sha3(block.prevhash + sender)
+        h = msg.data[0]
+        i = 1
+        while i < depth + 1:
+            if merkle_branch % 2 == 0:
+                h = sha3(offset*h + msg.data[i])
+            else:
+                h = sha3(offset*msg.data[i] + h)
+            merkle_branch = merkle_branch / 2
+            i += 1
+            
+
+        if h == root:
+            contract.storage[CHALLENGE_BLOCK] = block.number + period
+            send(sender, reward)
+        contract.storage[12333] = h
+        return (h)
+    return (0)

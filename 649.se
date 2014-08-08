@@ -1,19 +1,9 @@
-init:
+shared:
     BETTING_BLOCK = 1
     ENROLLED = 2
     POOL = 3
-    PERIOD = 1
-    
-    contract.storage[BETTING_BLOCK] = block.number
-    contract.storage[ENROLLED] = 0
-    contract.storage[POOL] = 0
-
-    
-code:
-    BETTING_BLOCK = 1
-    ENROLLED = 2
-    POOL = 3
-    START_POINT = 4
+    WINNINGNUM = 4
+    START_POINT = 12
     BET = 1000000000
     PERIOD = 1
     SELECTION = 20
@@ -23,29 +13,28 @@ code:
     REWARD5 = 40
     REWARD4 = 75
     REWARDG = 100
-    contract.storage[80000] = PERIOD
-    contract.storage[80001] = SELECTION
-    contract.storage[90000] = FEE
-    contract.storage[90001] = REWARD6
-    contract.storage[90002] = REWARD5B
-    contract.storage[90003] = REWARD5
-    contract.storage[90004] = REWARD4
-    contract.storage[90005] = REWARDG
+
+init:
+    
+    contract.storage[BETTING_BLOCK] = block.number
+    contract.storage[ENROLLED] = 0
+    contract.storage[POOL] = 0
+
+code:
     
     sender = msg.sender
     enrolled = contract.storage[ENROLLED]
     pool = contract.storage[POOL]
     if block.number <= contract.storage[BETTING_BLOCK]:
-        contract.storage[10000] = 0
         contract.storage[POOL] = pool + msg.value
         if msg.value < BET:
             return(0)
         else:
             pos = START_POINT + enrolled * 7
-            contract.storage[10000] = 2
             contract.storage[pos] = sender
             contract.storage[ENROLLED] = enrolled + 1
             pos += 1
+            
             # pick 6 numbers
             num = 6
             if msg.data[0] < 6:
@@ -81,7 +70,6 @@ code:
     else:
         selected = array(8)
         if enrolled > 0 :
-            contract.storage[10000] = 3
             match6   = 0
             winner6  = array(10)
             match5b  = 0
@@ -100,7 +88,7 @@ code:
             n = (h % SELECTION + SELECTION) % SELECTION
             numbers[n] = 2
             selected[6] = n
-            contract.storage[10000006] = n
+            contract.storage[WINNINGNUM + 6] = n
            
             i = 0
             while i < 6:
@@ -109,7 +97,7 @@ code:
                 if numbers[n] == 0:
                     numbers[n] = 1
                     selected[i] = n
-                    contract.storage[10000000 + i] = n
+                    contract.storage[WINNINGNUM + i] = n
                     i += 1
 
             h = sha3(h + i)
@@ -117,8 +105,7 @@ code:
             posG = START_POINT + 7*n
             winnerG = contract.storage[posG]
             selected[7] = h % enrolled
-            contract.storage[10000007] = n
-            contract.storage[10000008] = posG
+            contract.storage[WINNINGNUM + 7] = winnerG
 
             i = 0
             while i < enrolled:
@@ -166,10 +153,8 @@ code:
             minefee = FEE * pool / 1000
             send(winnerG, rewardg)
             #send(miner, minefee)
-            contract.storage[10000009] = winnerG
-            contract.storage[10000010] = rewardg
-            contract.storage[10000011] = REWARDG
-            contract.storage[10000013] = pool 
+
+            
             if match6 > 0:
                 i = 0
                 reward = (pool * REWARD6 / 1000) / match6
@@ -197,16 +182,7 @@ code:
                 while i < match4:
                     send(winner4[i], reward)
                 pool -=(pool * REWARD4 / 1000)
-            
-            contract.storage[10000020] = match6
-            contract.storage[10000021] = match5b
-            contract.storage[10000022] = match5
-            contract.storage[10000023] = match4
-            contract.storage[10000024] = match3
-            contract.storage[10000025] = match2b
-            contract.storage[10000026] = match2
-            
-            
+                        
         contract.storage[BETTING_BLOCK] = block.number + PERIOD
         contract.storage[ENROLLED] = 0
         contract.storage[POOL] = pool      

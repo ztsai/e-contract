@@ -17,8 +17,8 @@ code:
     BET = 1000000000
     PERIOD = 1
     SELECTION = 20
-    FEE = 100
-    REWARD6 = 635
+    FEE = 50
+    REWARD6 = 685
     REWARD5B = 50
     REWARD5 = 40
     REWARD4 = 75
@@ -125,8 +125,8 @@ code:
                 bonus = 0
                 match = 0
                 j = 1
+                pos = START_POINT + i * 7
                 while j <= 6:
-                    pos = START_POINT + i * 7
                     n = contract.storage[pos + j]
                     if numbers[n] == 2:
                         bonus = 1

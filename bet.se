@@ -1,0 +1,36 @@
+shared:
+    BETTING_BLOCK = 1
+    ENROLLED = 2
+    START_POINT = 3
+    BET = 1000
+    FEE = 100
+    PERIOD = 1
+    
+init:
+    contract.storage[BETTING_BLOCK] = block.number + PERIOD
+    contract.storage[ENROLLED] = 0
+	
+code:
+    sender = msg.sender
+    enrolled = contract.storage[ENROLLED]
+    if block.number <= contract.storage[BETTING_BLOCK]:
+        if msg.value < BET:
+            return(0)
+        else:
+            contract.storage[START_POINT + enrolled] = sender
+            contract.storage[ENROLLED] = enrolled + 1
+            if msg.value > BET:
+                send(sender, msg.value - BET)
+            return(enrolled+1)
+    else:
+        if enrolled > 0 :
+            contract.storage[BETTING_BLOCK] = block.number + PERIOD
+            dice = (block.prevhash % enrolled)
+
+
+            winner = contract.storage[START_POINT + dice]
+            contract.storage[ENROLLED] = 0
+            contract.storage[9999993117] = winner
+            out = enrolled * (BET - FEE)
+            send(winner, out)
+            return(winner)
